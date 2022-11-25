@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <script src="https://kit.fontawesome.com/9413138b72.js" crossorigin="anonymous"></script>
+       <title>Portofolio</title>
+       <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/MA2.png" class="logo" width="20%" height="20%">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#Projects">Portofolio</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="htext">
+                    <h1>“Your time is limited, so don’t  waste it <br> living someone else’s life.”</h1>
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="line">
+                    <div class="foto">
+                        <img src="images/abm1.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <p> &emsp;My name is Alexander. <br> &ensp;I am a student at "Stefan cel Mare" University of Suceava, 
+                            Faculty of Electrical Engineering and Computer Science.
+                            I am a flexible programmer, good communicator, used to working in a team. I am skilled In dealing with problems in a resourceful manner and always enthusiastic to learn and undertake new challenges. 
+                            I am a perfectionist, that's why it's important for me to keep everything simple, 
+                            clear and aesthetic. If I start something I will carry it through, no matter how much time and effort
+                            I have to put in. 
+                        </p>
+                            <div class="CV">
+                                <h3><a href="CV.pdf" target="_blank">Curriculum vitae (CV)</a></h3>
+                            </div>
+                            <div class="know">
+                                <div class="card">
+                                    <div class="imag">
+                                        <img src="images/figma.svg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 id="WebDesign">Web Design</h3>
+                                        <p>
+                                            HTML <br>
+                                            CSS
+                                        </p>
+                                        <a href="#">Readmore</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="imag">
+                                        <img src="images/code.svg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 id="Programmer">IT Language</h3>
+                                        <p>
+                                            Pascal <br> Python <br>
+                                            C, C++
+                                        </p>
+                                        <a href="#">Readmore</a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="imag">
+                                        <img src="images/language.svg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <h3 id="Language">Language</h3>
+                                        <p>
+                                            Romanian <br> Russian <br>
+                                            English
+                                        </p>
+                                        <a href="#">Readmore</a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Projects">
+            <div class="container">
+                <div class="all">
+                    <div class="slider">
+                        <div class="slides">
+                            <!--radio buttons start-->
+                            <input type="radio" name="radio-btn" id="radio1">
+                            <input type="radio" name="radio-btn" id="radio2">
+                            <!--radio buttons end-->
+                            <!--slide images start-->
+                            <div class="slide first">
+                            <img src="images/ATRM.png" alt="">
+                            </div>
+                            <div class="slide">
+                            <img src="images/TFILM.png" alt="">
+                            </div>
+                            <!--slide images end-->
+                            <!--automatic navigation start-->
+                            <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            </div>
+                            <!--automatic navigation end-->
+                        </div>
+                        <!--manual navigation start-->
+                        <div class="navigation-manual">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                        </div>
+                        <!--manual navigation end-->
+                    </div>
+                        <!--image slider end-->
+                    
+                    <script type="text/javascript">
+                        var counter = 1;
+                        setInterval(function(){
+                        document.getElementById('radio' + counter).checked = true;
+                        counter++;
+                        if(counter > 4){
+                            counter = 1;
+                        }
+                        }, 5000);
+                    </script>
+                </div>
+                <div class="expt">
+                    <div class="exp">
+                        <h3><a href="ATRM/index.html" target="_blank">Example1</a></h3>
+                    </div>
+                    <div class="exp">
+                        <h3><a href="TFilm/index.html" target="_blank">Example2</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Contact">
+            <div class="contact-section">
+                <h1>Contact Me</h1>
+                <form class="contact-form" action="index.html" method="post">
+                    <input type="text" class="contact-form-text" placeholder="Your name">
+                    <input type="email" class="contact-form-text" placeholder="Your email">
+                    <input type="text" class="contact-form-text" placeholder="Your phone">
+                    <textarea class="contact-form-text" placeholder="Your message"></textarea>
+                    <input type="button" class="contact-form-btn" value="Send">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
